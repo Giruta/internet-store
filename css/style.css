@@ -1,0 +1,28 @@
+html{
+  color: black;
+}
+a {
+  color: #000;
+}
+h1 {
+  text-align: center;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: 50px auto;
+  justify-content: center;
+}
+.mycard {
+  padding: 20px 10px;
+  width: 23%;
+  margin: 10px;
+  color: black;
+  background: darkgrey;
+}
+.myimg {
+  width: 100%;
+  height: 17rem;
+  margin-bottom: 5px;
+}

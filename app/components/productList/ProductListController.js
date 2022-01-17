@@ -1,5 +1,5 @@
-import { ProductListView } from './ProductListView.js';
-import { ProductListModel } from './ProductListModel.js';
+import ProductListView from './ProductListView.js';
+import ProductListModel from './ProductListModel.js';
 
 export class ProductListController {
   constructor() {
@@ -9,9 +9,7 @@ export class ProductListController {
     this.handleLoadPosts();
   }
 
-
   handleLoadPosts() {
-    this.data = this.model.getProductList();
-    this.view.renderPost(this.data);
+    this.model.getData().then(data => this.view.renderPosts(data));
   }
 }
